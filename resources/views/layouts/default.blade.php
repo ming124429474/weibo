@@ -4,6 +4,6 @@
     <title>@yield('title','web App')</title>
 </head>
 <body>
-@yield('content');
+@yield('content')
 </body>
 </html>
