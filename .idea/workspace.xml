@@ -111,7 +111,7 @@
           <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="412">
+                <state relative-caret-position="317">
                   <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
                 </state>
               </provider>
@@ -268,7 +268,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-532" />
     <option name="y" value="25" />
     <option name="width" value="2425" />
@@ -345,15 +345,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568786828469</updated>
-      <workItem from="1568786830901" duration="6449000" />
+      <workItem from="1568786830901" duration="7049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6449000" />
+    <option name="totallyTimeSpent" value="7049000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20107238" />
@@ -488,7 +488,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="317">
           <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
         </state>
       </provider>

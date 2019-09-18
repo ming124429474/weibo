@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>@yield('title','web App')</title>
+    <title>@yield('title', 'Weibo App') - Laravel 入门教程</title>
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
-@yield('content')
+
+@include('layouts._header')
+
+<div class="container">
+    @yield('content')
+
+    @include('layouts._footer')
 </body>
+</div>
+
 </html>
