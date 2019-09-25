@@ -68,20 +68,20 @@ class User extends Authenticatable
         return $this->belongsToMany(User::class, 'followers','user_id','follower_id');
     }
 
+    //用户获取关注列表
+    public function followings()
+    {
+        return $this->belongsToMany(User::class,'followers','follower_id','user_id');
+    }
+
     //关注用户
     public function follow($user_ids)
     {
         if(!is_array($user_ids)){
             $user_ids = compact('user_ids');
         }
-        $this->followers()->sync($user_ids,false);
+        $this->followings()->sync($user_ids, false);
 
-    }
-
-    //判断用户是否关注用户
-    public function isFollowing($user_id)
-    {
-        return $this->followings->contains($user_id);
     }
 
     //取消关注
@@ -90,15 +90,16 @@ class User extends Authenticatable
         if(!is_array($user_ids)){
             $user_ids = compact('user_ids');
         }
-        $this->followers()->detach($user_ids);
+        $this->followings()->detach($user_ids);
     }
 
 
-    //用户获取关注列表
-    public function followings()
+    //判断用户是否关注用户
+    public function isFollowing($user_id)
     {
-        return $this->belongsToMany(User::class,'followers','follower_id','user_id');
+        return $this->followings->contains($user_id);
     }
+
 
     public function feed()
     {
